@@ -1,16 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-  <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-  <title>Brunch with ES6</title>
+  <title>Ben Mullen - The Website</title>
+  <meta name="description" content="Ben Mullen - The Website">
+  <meta name="author" content="Ben Mullen">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,300,600" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courier+Prime" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
   <script src="/vendor.js"></script>
   <script src="/app.js"></script>
   <script>require('initialize');</script>
+
 </head>
 <body>
-  <div id="app"></div>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    
+    <div class="twelve column" style="margin-top: 10%">
+		<div class="row">
+			<h4>Ben Mullen - The Website</h4>
+      <div class="four column">
+        <button id="mainButton">Main</button>
+        <button id="experienceButton">Experience</button>
+        <button id="funFactsButton">Fun Facts</button>
+        <button id="creditsButton">Credits</button>
+      </div>
+		</div>
+		<div class="row" id="mainContent">			
+			<p>Ben Mullen's Online Presence</p>
+			<table>
+				<caption>This guy</caption>
+				<td><img src="/images/headshot.jpg" alt="Ben"  width="300" height="240"/></td>
+			</table>
+		</div>
+				
+		<div class="row" id="experience" style="display:none">
+			<h5>Experience</h5>
+			<p>Resume Stuff - web design is not featured</p>
+      <p>
+        <a href="/Ben_Mullen_Resume.pdf">Resume</a>
+      </p>
+		</div>
+		
+		<div class="row" id="funFacts" style="display:none">
+			<h5>Fun Facts</h5>
+			<p> Pictures I took through the ages</p>
+      <div class="six columns">
+        <p>
+          <img src="/images/ferns_nipple.JPG" alt="Fern formation at sunrise - Capitol Reef, UT">
+          <br>
+          Fern formation at sunrise - Capitol Reef, UT
+        </p>
+      </div>
+      <div class="six columns">
+      <p>
+        <img src="/images/reef.JPG" alt="Sandstone Wall - Capitol Reef, UT">
+        <br>
+        Sandstone Wall - Capitol Reef, UT
+      </p>
+      <p>
+        <img src="/images/east_fork.JPG" alt="Hiking Trail - East Fork State Park, OH">
+        <br>
+        Hiking Trail - East Fork State Park, OH
+      </p>
+      </div>
+      
+      
+    </div>
+
+
+		</div>
+		
+		<div class="row" id="credits" style="display:none">
+			<h5>Credits</h5>
+			<table>
+				<caption>Webmaster</caption>
+				<td>benmullen1 at gmail dot com</td>
+			</table>
+		</div>
+    </div>
+	  
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
